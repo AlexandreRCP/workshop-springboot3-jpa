@@ -35,11 +35,7 @@ public class OrderItemPk implements Serializable{
 		return product;
 	}
 	
-<<<<<<< HEAD
 	public void setProduct(Product product) {
-=======
-	public void setProduct(Product produtc) {
->>>>>>> a222a4e660ea770925fd98833de9428a4fcdac3d
 		this.product = product;
 	}
 	
