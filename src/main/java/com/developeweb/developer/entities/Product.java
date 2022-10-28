@@ -5,8 +5,11 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+=======
+>>>>>>> a222a4e660ea770925fd98833de9428a4fcdac3d
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +17,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+<<<<<<< HEAD
 import jakarta.persistence.OneToMany;
+=======
+>>>>>>> a222a4e660ea770925fd98833de9428a4fcdac3d
 import jakarta.persistence.Table;
 
 @Entity
@@ -34,9 +40,12 @@ public class Product implements Serializable{
 	@JoinTable(name = "tb_product_category", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
 	private Set<Category> categories = new HashSet<>();
 	
+<<<<<<< HEAD
 	@OneToMany(mappedBy = "id.product")
 	private Set<OrderItem> items = new HashSet<>();
 	
+=======
+>>>>>>> a222a4e660ea770925fd98833de9428a4fcdac3d
 	public Product() {
 		
 	}
@@ -94,6 +103,7 @@ public class Product implements Serializable{
 		return categories;
 	}
 	
+<<<<<<< HEAD
 	@JsonIgnore
 	public Set<Order> getOrders(){
 		Set<Order> set = new HashSet<>();
@@ -103,6 +113,8 @@ public class Product implements Serializable{
 		return set;
 	}
 	
+=======
+>>>>>>> a222a4e660ea770925fd98833de9428a4fcdac3d
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
